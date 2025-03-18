@@ -1,0 +1,5 @@
+Response for app_test.txt:
+This Python code provides a query assistant that processes user queries related to the Bhagavad Gita and Patanjali Yoga Sutras. The code utilizes various libraries and models, including SentenceTransformer, Pinecone, Groq, QdrantClient, and Llama-3-8b-8192. The primary purpose of this code is to provide accurate and relevant responses to user queries by analyzing the context and searching for matching text in large databases.
+
+The code defines several functions, including `chain_of_thought`, `get_bot_response`, `check_valid`, `check_valid_answer`, `check_type`, `rewrite_query`, and `rewrite_yoga_sutras_query`, which are used to process and analyze user queries. The `process_query` function is the core of the query assistant, which takes a user query as input, processes it, and returns a response based on the results of the query.
+

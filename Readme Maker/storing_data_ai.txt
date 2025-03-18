@@ -1,0 +1,7 @@
+Response for storing_data.txt:
+This is a Python script that utilizes several libraries and modules to manipulate and load data into a Qdrant vector database. The primary purpose of this code is to load pre-computed sentence embeddings and their corresponding enhanced sentences into a Qdrant collection. 
+
+The script starts by importing necessary modules and libraries, including pickle for data serialization, Pinecone for building a Pinecone client, QdrantClient for interacting with the Qdrant vector database, and pandas for data manipulation. It then loads pre-computed sentence embeddings and enhanced sentences from pickle files. 
+
+The script then creates a Qdrant client and recreates a collection named "Yoga" with a specified vector size. It then iterates over the sentence embeddings, upserts them into the "Yoga" collection in Qdrant, and prints the enhanced sentences and the size of the sentence embeddings. The script ends with a success message once the data has been loaded. Key functionalities of this code include data loading, Qdrant client creation, and upserting data into a Qdrant collection.
+

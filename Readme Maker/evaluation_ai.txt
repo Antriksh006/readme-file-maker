@@ -1,0 +1,7 @@
+Response for evaluation.txt:
+This code is written in Python and uses various libraries and modules, including NumPy, scikit-learn, Sentence Transformers, SpaCy, Groq, Qdrant, and dotenv. The primary purpose of the code is to optimize user queries for Retrieval-Augmented Generation (RAG) systems, specifically for retrieving precise and relevant verses from the Bhagavad Gita.
+
+The code defines two main functions: `rewrite_query()` and `process_evaluation()`. The `rewrite_query()` function uses the Groq API to generate rewritten queries that are more specific, contextually rich, and precise. The `process_evaluation()` function takes in a query, rewrites it using the `rewrite_query()` function, then uses the Qdrant API to search for relevant Bhagavad Gita verses based on the query embedding. The function returns the maximum similarity score between the query and the retrieved verse embeddings.
+
+The code also loads a large dataset of Bhagavad Gita questions and translations, processes the data using the defined functions, and calculates the average evaluation score.
+
