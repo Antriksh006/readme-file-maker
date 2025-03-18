@@ -1,7 +1,0 @@
-Response for embedding_conv.txt:
-This code is written in Python. It utilizes several modules and libraries, including pandas, sentence transformers, spaCy, and GROQ. The primary purpose of this code is to process and analyze a dataset of yoga sutras and their translations into English.
-
-The code first reads a CSV file containing the yoga sutras and their translations, and then manipulates the data to create a story-like narrative. It also defines a function to split text into sentences using spaCy. The code then encodes the sentences using a sentence transformer model and creates two pickle files containing the sentence embeddings and the enhanced sentences. 
-
-The key functionalities of this code include data cleaning and preprocessing, text manipulation, and sentence embedding. The use of sentence transformers and spaCy enables the code to perform tasks such as sentence clustering and semantic search. The GROQ client is used to interact with a cloud-based search engine. Overall, this code provides a foundation for text-based analysis and search applications in the domain of yoga and spirituality.
-

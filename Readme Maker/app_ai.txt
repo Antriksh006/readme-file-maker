@@ -1,7 +1,0 @@
-Response for app.txt:
-This code is written in Python and uses various libraries and modules such as streamlit, sentence transformers, pinecone, groq, and qdrant_client. The primary purpose of this code is to create a query assistant that returns relevant information from the Bhagavad Gita and Patanjali Yoga Sutras based on user queries.
-
-The code defines several functions, including chain_of_thought, get_bot_response, check_valid, check_valid_answer, check_type, rewrite_query, rewrite_yoga_sutras_query, get_sanskrit, and get_chap_verse. These functions are used to preprocess user queries, retrieve relevant information, and generate responses. The process_query function is the main function that takes a query and a collection name (either "gita" or "yoga") as input and returns a response based on the query.
-
-The code also includes a Streamlit web application that allows users to input queries and receive responses. The query assistant uses natural language processing and machine learning techniques to process queries and retrieve relevant information from the Bhagavad Gita and Patanjali Yoga Sutras.
-
