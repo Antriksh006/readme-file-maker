@@ -4,6 +4,7 @@ import os
 import nbformat
 from nbconvert import PythonExporter
 from groq import Groq
+import dotenv
 
 def convert_notebook_to_script(notebook_content):
     notebook_node = nbformat.reads(notebook_content, as_version=4)
@@ -69,21 +70,20 @@ def get_bot_response_readme(text, groq_client, additional_info, basic_markdown, 
     return chat_completion.choices[0].message.content
 
 def main():
+    load_dotenv()
+    
+    groq_api_key = os.getenv('GROQ_API_KEY')
+    if not groq_api_key:
+        raise ValueError("GROQ_API_KEY not found in .env file")
+
     parser = argparse.ArgumentParser(description='Generate a README.md file for a GitHub repository.')
     parser.add_argument('-r', '--repo', required=True, help='GitHub repository in the format "owner/repo"')
-    parser.add_argument('-k', '--key', required=True, help='GitHub API key')
     args = parser.parse_args()
 
-    g = Github(args.key)
+    g = Github()
     repo = g.get_repo(args.repo)
 
-    additional_info = input("Do you want to add any additional information to the README? (y/n): ")
-    if additional_info.lower() == 'y':
-        additional_info = input("Enter the additional information you want to add: ")
-        with open(r'additional_info_ai.txt', 'w', encoding='utf-8') as additional_info_file:
-            additional_info_file.write(additional_info)
-
-    groq_client = Groq(api_key=args.key)
+    groq_client = Groq(api_key=groq_api_key)
     folder_path = r"Readme Maker"
     outside_path = os.path.join(os.getcwd())
     output_folder = folder_path

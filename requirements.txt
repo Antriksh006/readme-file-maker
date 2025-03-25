@@ -1,0 +1,6 @@
+argparse
+PyGithub
+nbformat
+nbconvert
+groq
+python-dotenv
