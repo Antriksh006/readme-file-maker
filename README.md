@@ -1,67 +1,58 @@
-# 🎓 AI README Generator
-### *Your Automatic README Creator*
+# 📚 AI README Maker
+### *Automated README Generation for GitHub Repositories*
+
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![GROQ](https://img.shields.io/badge/GROQ-F06835?style=for-the-badge&logo=sanity&logoColor=white)](https://www.sanity.io/docs/groq)
-[![Argparse](https://img.shields.io/badge/Argparse-FF9900?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/library/argparse.html)
-[![Nbformat](https://img.shields.io/badge/Nbformat-181717?style=for-the-badge&logo=jupyter&logoColor=white)](https://nbformat.readthedocs.io/en/latest/)
-[![Nbconvert](https://img.shields.io/badge/Nbconvert-181717?style=for-the-badge&logo=jupyter&logoColor=white)](https://nbconvert.readthedocs.io/en/latest/)
+[![Groq](https://img.shields.io/badge/Groq-F06835?style=for-the-badge&logo=sanity&logoColor=white)](https://www.sanity.io/docs/groq)
 
 ## 🌟 Overview
-The AI README Generator is a Python-based tool designed to automate the creation of README.md files for GitHub repositories. It utilizes various libraries, including `argparse`, `github`, `nbformat`, `nbconvert`, and `groq`, to process repository files, convert notebook files to Python scripts, and generate descriptions for each file using the `groq` API.
+AI README Maker is a Python module designed to automate the generation of comprehensive README files for GitHub repositories. It utilizes the Groq API to generate descriptions for each code file, creating a detailed and informative README.
 
-### 📚 Key Features
-- **Repository Processing**: The tool processes the contents of a GitHub repository.
-- **Notebook Conversion**: It converts notebook files to Python scripts using `nbconvert`.
-- **File Description Generation**: The tool generates descriptions for each file using the `groq` API.
-- **README Creation**: It combines the generated descriptions to create a final README.md file.
+### 🏆 Key Features
+- **Automated README Generation**: Generate README files with ease, saving time and effort.
+- **Groq API Integration**: Leverage the power of the Groq API to generate high-quality descriptions for code files.
+- **Error Handling**: Smooth execution process with built-in error handling and exception management.
 
-## ✨ Usage
-To use the AI README Generator, follow these steps:
-1. **Install Dependencies**: Install the required libraries, including `argparse`, `github`, `nbformat`, `nbconvert`, and `groq`.
-2. **Configure Environment Variables**: Set up environment variables using the `dotenv` library.
-3. **Run the Tool**: Execute the tool using the command line, providing the repository path and other necessary arguments.
-
-## 🛠️ Tech Stack
-- **Programming Language**: Python
-- **Libraries**: `argparse`, `github`, `nbformat`, `nbconvert`, `groq`, `dotenv`, `os`
-- **API**: `groq` API for generating file descriptions
-
-## 🚀 Getting Started
+## ✨ Installation
+To install AI README Maker, run the following command:
 ```bash
-# Clone the repository
-git clone https://github.com/your-repo/ai-readme-generator
-
-# Install dependencies
-cd ai-readme-generator
-pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-
-# Run the tool
-python generate_readme.py --repo-path /path/to/your/repo
+pip install readmer-maker-py
 ```
+### 🚀 Usage
+Use the module by running the following command:
+```bash
+readme-maker-py -k <groq_key> -r <GithubName>/<GithubRepoName>
+```
+Replace `<groq_key>` with your actual Groq API key and `<GithubName>/<GithubRepoName>` with the name of your GitHub repository.
 
-## 📱 Code Explanation
-The tool consists of several components:
-- **`generate_readme.py`**: The main entry point of the tool, responsible for processing the repository and generating the README file.
-- **`repo_processor.py`**: A module that processes the repository contents and extracts file information.
-- **`notebook_converter.py`**: A module that converts notebook files to Python scripts using `nbconvert`.
-- **`description_generator.py`**: A module that generates file descriptions using the `groq` API.
+## 📚 Code Explanation
+The code is written in Python and utilizes various libraries, including `argparse`, `github`, `nbformat`, and `groq`. It processes each file in the repository, generating descriptions using the Groq API and combining them to create a comprehensive README file.
 
-## 🔗 API Documentation
-The tool uses the `groq` API to generate file descriptions. For more information on the `groq` API, please refer to the [official documentation](https://www.sanity.io/docs/groq).
+### 🗂️ Project Structure
+The project consists of a single Python module, `readme_maker.py`, which contains the core functionality of the project.
+
+## 📝 Dependencies
+- **Python**: The project is built using Python 3.x.
+- **argparse**: Used for parsing command-line arguments.
+- **github**: Utilized for interacting with the GitHub API.
+- **nbformat**: Used for processing Jupyter notebooks.
+- **groq**: The Groq API is used for generating descriptions.
+
+## 📊 Example Use Case
+To generate a README file for a repository named `example-repo` owned by `username`, run the following command:
+```bash
+readme-maker-py -k your_groq_api_key -r username/example-repo
+```
+Replace `your_groq_api_key` with your actual Groq API key.
 
 ## 🙏 Acknowledgments
-- **Python Community**: For providing a robust and versatile programming language.
-- **GitHub**: For hosting the repository and providing a platform for collaboration.
-- **GROQ**: For providing a powerful API for generating file descriptions.
+- **Groq**: For providing the API used in this project.
+- **GitHub**: For providing the platform and API used in this project.
 
 ---
 
 <div align="center">
-  Made with ❤️ by [Your Name](https://github.com/your-username)
+  Made with ❤️ by [Your Name]
   
-  [Website](https://your-website.com) · [Report Bug](https://github.com/your-username/ai-readme-generator/issues) · [Request Feature](https://github.com/your-username/ai-readme-generator/issues)
+  [Website](https://your-website.com) · [Report Bug](https://github.com/your-username/your-repo/issues) · [Request Feature](https://github.com/your-username/your-repo/issues)
 </div>
