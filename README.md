@@ -55,7 +55,7 @@ Replace `your_groq_api_key` with your actual Groq API key.
 ---
 
 <div align="center">
-  Made with ❤️ by [Your Name]
+  Made with ❤️ by Antriksh
   
-  [Website](https://your-website.com) · [Report Bug](https://github.com/your-username/your-repo/issues) · [Request Feature](https://github.com/your-username/your-repo/issues)
+  [Website](https://your-website.com) · [Report Bug](https://github.com/Antriksh006/readme-file-maker/issues) · [Request Feature](https://github.com/Antriksh006/readme-file-maker/issues)
 </div>
