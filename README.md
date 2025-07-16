@@ -3,7 +3,10 @@
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![Groq](https://img.shields.io/badge/Groq-F06835?style=for-the-badge&logo=sanity&logoColor=white)](https://www.sanity.io/docs/groq)
+[![GROQ](https://img.shields.io/badge/GROQ-F06835?style=for-the-badge&logo=sanity&logoColor=white)](https://www.sanity.io/docs/groq)
+[![Argparse](https://img.shields.io/badge/Argparse-FF9900?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/library/argparse.html)
+[![Nbformat](https://img.shields.io/badge/Nbformat-181717?style=for-the-badge&logo=jupyter&logoColor=white)](https://nbformat.readthedocs.io/en/latest/)
+[![Nbconvert](https://img.shields.io/badge/Nbconvert-181717?style=for-the-badge&logo=jupyter&logoColor=white)](https://nbconvert.readthedocs.io/en/latest/)
 
 ## 🌟 Overview
 AI README Maker is a Python module designed to automate the generation of comprehensive README files for GitHub repositories. It utilizes the Groq API to generate descriptions for each code file, creating a detailed and informative README.
